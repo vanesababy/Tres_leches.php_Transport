@@ -1,0 +1,29 @@
+<div class="slider" #slickElement class="card-training-program">
+
+  <div class="training-program" *ngFor="let competencia1 of competencia">
+
+      <div class="active-tokens">
+          <p>56</p>
+          <p>Fichas activas</p>
+      </div>
+      <div class="description">
+          <p>{{competencia1.nombreCompetencia}}</p>
+          <p>ID {{competencia1.id}}</p>
+          <p>{{competencia1.codigoCompetencia}} codigo competencia</p>
+          <p>{{competencia1.idActividadProyecto}} Actividad proyecto</p>
+      </div>
+      <div class="actions">
+          <button (click)="actualizarCompetencia(competencia1)"><img src="../../../assets/icons/reload.svg"></button>
+          <button (click)="deleteCompetencia(competencia1.id)" > <img src="../../../assets/icons/delete.svg"></button>
+      </div>
+
+
+
+
+  </div>
+  <div class="button-añadir">
+    <a><button (click)="openModalCreate()">Añadir1</button></a>
+  </div>
+
+</div>
+
