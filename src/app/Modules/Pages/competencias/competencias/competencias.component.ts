@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { ExtendModalComponent } from 'src/app/Modules/Components/extend-modal/extend-modal.component';
 import { CompetenciaModel } from 'src/app/shared/models/competencia.model';
 import { ExtendModalFiller } from 'src/app/shared/models/extend-modal-content';
 import { CompetenciaService } from 'src/app/shared/services/competencia.service';
